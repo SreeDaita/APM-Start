@@ -28,6 +28,7 @@ export class ProductListComponent implements OnInit,OnDestroy{
        );
        //this.filteredProducts=this.products;
     }
+    // this need to commit to working clone then merge to Main
        pageTitle : string ='Product lists';
        imageWidth : number =50;
        imageMargin : number =2;
