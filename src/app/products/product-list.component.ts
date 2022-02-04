@@ -45,7 +45,7 @@ export class ProductListComponent implements OnInit{
         }
 
         thanksForRating(productName:string,message:string) : void{
-           this.pageTitle = 'Thanks for rating '+ productName + ' the current rating for ' +productName + ' is '+  parseFloat(message);
+           this.pageTitle = 'Thanks for rating '+ productName + ' the rating for ' +productName + ' is '+  parseFloat(message);
         }
     }
 
