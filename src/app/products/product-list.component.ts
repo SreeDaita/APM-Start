@@ -43,7 +43,7 @@ export class ProductListComponent implements OnInit,OnDestroy{
        set listFilter(value :string) {
            this._listFilter=value;
            console.log('set value=', value);
-           this.filteredProducts = this.filterProducts(value); // without this it wont work because out of domain test
+           this.filteredProducts = this.filterProducts(value); // without this it wont work because out of domain
        }
        
        filteredProducts: IProducts[] = [];
