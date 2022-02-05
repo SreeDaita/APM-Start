@@ -28,7 +28,6 @@ export class ProductListComponent implements OnInit,OnDestroy{
        );
        //this.filteredProducts=this.products;
     }
-    // this need to commit to working clone then merge to Main gg
        pageTitle : string ='Product lists';
        imageWidth : number =50;
        imageMargin : number =2;
@@ -44,7 +43,7 @@ export class ProductListComponent implements OnInit,OnDestroy{
        set listFilter(value :string) {
            this._listFilter=value;
            console.log('set value=', value);
-           this.filteredProducts = this.filterProducts(value); // without this it wont work because out of domain
+           this.filteredProducts = this.filterProducts(value); // without this it wont work because out of domain test
        }
        
        filteredProducts: IProducts[] = [];
