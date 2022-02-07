@@ -10,7 +10,7 @@ import { catchError, map, tap} from "rxjs/operators"
 })
 export class ProductService{
   constructor(private http : HttpClient){}
-     private productUrl :string ="https://1b10345d-a10d-4f4c-b22a-1080bdb5b4af.mock.pstmn.io/products";
+     private productUrl :string ="https://1b10345d-a10d-4f4c-b22a-1080bdb5b4af.mock.pstmn.io/products"; // mocked service from postman
      getProducts() : Observable<IProducts[]>{
       return this.http.get<IProducts[]>(this.productUrl).pipe(
        tap((data) => console.log('All',JSON.stringify(data))),
